@@ -11,7 +11,7 @@ const PeoplePage = () => {
 
   useEffect(() => {
     const fetchPeople = async () => {
-      const response = await fetch(`${apiHostname}/api/person`, {
+      const response = await fetch('https://87vt6n099c.execute-api.us-east-1.amazonaws.com/default/dbdemofunction', {
         method: 'GET',
         headers: new Headers({
           'Authorization': `Bearer ${bearerToken}`,
